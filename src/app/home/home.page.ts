@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,23 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class HomePage {
+  mensaje: boolean = false;
 
-  constructor() {}
+  constructor(private router: Router) {}
+
+  info() {
+    this.mensaje = true;
+    setTimeout(() => {
+      this.mensaje = false;
+    }, 5000);
+  }
+
+  login(){
+    this.router.navigate(['/login']);
+  }
+
+  registro(){
+    this.router.navigate(['/register']);
+  }
 
 }
