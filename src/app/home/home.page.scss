@@ -1,38 +1,30 @@
 #container {
   text-align: center;
-  margin-top: 10%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-card {
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-#container a {
-  text-decoration: none;
+ion-card-content p {
+  font-size: 1rem;
+  color: #555;
 }
 
 .mensaje {
-  border: 1px solid #2db54a;
-  border-radius: 8px;
-  padding: 16px;
-  text-align: center;
-  margin-top: 5%;
-  margin-left: 40%;
-  margin-right: 40%;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: green;
 }
 
 ion-button {
-  .info{
-    background-color: #2db54a;
-  }
+  margin: 10px;
 }

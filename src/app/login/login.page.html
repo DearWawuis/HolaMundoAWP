@@ -20,7 +20,11 @@
   </ion-button>
 
   <!-- Nuevo botón para iniciar sesión -->
-  <ion-button expand="full" (click)="validarUsuario()" [disabled]="!isValid">
+  <ion-button expand="full" (click)="login()" [disabled]="!isValid">
     Iniciar Sesión
+  </ion-button>
+
+  <ion-button expand="block" (click)="registro()" class="info">
+    Ir a registro
   </ion-button>
 </ion-content>
